@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.currency-list {
+    display: flex;
+}
+.currency {
+    display: flex;
+    justify-content: space-between;
+    transition: 0.25s;
+    color: #26a69a;
+    background-color: #fff;
+    width: 90px;
+    margin-left: 16px;
+}

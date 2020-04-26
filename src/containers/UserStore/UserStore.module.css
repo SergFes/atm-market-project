@@ -1,0 +1,46 @@
+.container {
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+}
+
+.currency-btn-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.currency-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.currency {
+    display: flex;
+    justify-content: space-between;
+    transition: 0.25s;
+    color: #26a69a;
+    background-color: #fff;
+    width: 100px;
+}
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #26a69a;
+    text-align: center;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    border-radius: 2px;
+    padding: 0 16px;
+    transition: 0.3s ease-out;
+    height: 24px;
+    line-height: 24px;
+    user-select: none;
+}
+
+.btn:hover {
+    background-color: #2bbbad;
+}

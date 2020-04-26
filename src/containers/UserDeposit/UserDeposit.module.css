@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #26a69a;
+    text-align: center;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    border-radius: 2px;
+    padding: 0 16px;
+    transition: 0.3s ease-out;
+    height: 24px;
+    line-height: 24px;
+    user-select: none;
+}
+
+.btn_0 {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.btn:hover {
+    background-color: #2bbbad;
+}

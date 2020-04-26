@@ -1,0 +1,43 @@
+.box {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    z-index: 10000;
+    padding: 10px 10px 0 0;
+    transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
+}
+
+.toast {
+    border-radius: 8px;
+    top: 35px;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    line-height: 1.5em;
+    background-color: #323232;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: default;
+    margin-bottom: 4px;
+    user-select: none;
+}
+
+.itemEnter {
+    opacity: 0;
+}
+
+.itemEnterActive {
+    transition: opacity 0.5s;
+    opacity: 1;
+}
+
+.itemLeaveActive {
+    transition: opacity 0.5s;
+    opacity: 0;
+}

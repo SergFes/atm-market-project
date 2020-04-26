@@ -1,0 +1,29 @@
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.title {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+}
+
+.col {
+    outline: 1px solid #e0e0e0;
+    padding: 12px;
+    margin: 0 12px 24px 12px;
+}
+
+.col_4 {
+    width: calc(100% / 3 - 48px);
+}
+
+.col_8 {
+    width: calc(100% / 1.5 - 48px);
+}

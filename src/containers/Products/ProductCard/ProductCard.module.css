@@ -1,0 +1,53 @@
+.card {
+    margin: 0 auto;
+    text-align: center;
+    padding: 12px;
+    border: 1px dashed #cccccc;
+    border-radius: 10px;
+}
+
+.card_0 {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.card-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.currency {
+    display: flex;
+    justify-content: space-between;
+    transition: 0.25s;
+    background-color: #fff;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #26a69a;
+    text-align: center;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    border-radius: 2px;
+    padding: 0 16px;
+    transition: 0.3s ease-out;
+    height: 24px;
+    line-height: 24px;
+    user-select: none;
+}
+
+.btn:hover {
+    background-color: #2bbbad;
+}
