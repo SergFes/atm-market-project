@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, ReactElement } from 'react';
 import withStore from '../../hocs/withStore';
 import { IRootStore } from '../../store';
 import { getCurrencyFormat } from '../../utils/format.utils';
@@ -9,7 +9,7 @@ type TCashBoxProps = {
     store: IRootStore;
 };
 
-const CashBox: FC<TCashBoxProps> = ({ store }: TCashBoxProps) => {
+const CashBox: FC<TCashBoxProps> = ({ store }: TCashBoxProps): ReactElement => {
     const {
         сashboxStore: { totalAmount, denominationQuantityMap },
     } = store;

@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, ReactElement } from 'react';
 import withStore from '../../hocs/withStore';
 import { IRootStore } from '../../store';
 import styles from './UserStore.module.css';
@@ -9,7 +9,7 @@ type TUserStoreProps = {
     store: IRootStore;
 };
 
-const UserStore: FC<TUserStoreProps> = ({ store }: TUserStoreProps) => {
+const UserStore: FC<TUserStoreProps> = ({ store }: TUserStoreProps): ReactElement => {
     const {
         userStore: { denominationQuantityMap, totalAmount },
         appController: { makeDeposit },

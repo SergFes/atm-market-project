@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, ReactElement } from 'react';
 import withStore from '../../hocs/withStore';
 import { IRootStore } from '../../store';
 import styles from './Products.module.css';
@@ -9,7 +9,7 @@ type TProductsProps = {
     store: IRootStore;
 };
 
-const Products: FC<TProductsProps> = ({ store }: TProductsProps) => {
+const Products: FC<TProductsProps> = ({ store }: TProductsProps): ReactElement => {
     const {
         productStore: { products },
         appController: { buyProduct },

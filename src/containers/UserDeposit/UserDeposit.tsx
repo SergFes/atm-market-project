@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, ReactElement } from 'react';
 import withStore from '../../hocs/withStore';
 import { IRootStore } from '../../store';
 import { getCurrencyFormat } from '../../utils/format.utils';
@@ -9,7 +9,7 @@ type TUserDepositProps = {
     store: IRootStore;
 };
 
-const UserDeposit: FC<TUserDepositProps> = ({ store }: TUserDepositProps) => {
+const UserDeposit: FC<TUserDepositProps> = ({ store }: TUserDepositProps): ReactElement => {
     const {
         depositStore: { totalAmount },
         appController: { returnDeposit },

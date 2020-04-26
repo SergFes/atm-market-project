@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, ReactElement } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import withStore from '../../hocs/withStore';
 import { IRootStore } from '../../store';
@@ -9,7 +9,7 @@ type TNotificationsProps = {
     store: IRootStore;
 };
 
-const Notifications: FC<TNotificationsProps> = ({ store }: TNotificationsProps) => {
+const Notifications: FC<TNotificationsProps> = ({ store }: TNotificationsProps): ReactElement => {
     const {
         notifications: { list, remove },
     } = store;

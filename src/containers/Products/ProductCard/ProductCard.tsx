@@ -1,4 +1,4 @@
-import React, { FC, useCallback, useMemo } from 'react';
+import React, { FC, ReactElement, useCallback, useMemo } from 'react';
 import styles from './ProductCard.module.css';
 import coffe from './photo/coffe.jpg';
 import tea from './photo/tea.jpg';
@@ -23,7 +23,7 @@ type TProductsProps = {
     onClick: (id: number) => void;
 };
 
-const ProductCard: FC<TProductsProps> = ({ img, name, cost, quantity, onClick, id }: TProductsProps) => {
+const ProductCard: FC<TProductsProps> = ({ img, name, cost, quantity, onClick, id }: TProductsProps): ReactElement => {
     const handleClick = useCallback(() => onClick(id), [id, onClick]);
     return useMemo(
         () => (
